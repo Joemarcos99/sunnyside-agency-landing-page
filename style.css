@@ -39,7 +39,7 @@ Sunnyside Agency Landing Page
   padding: 0;
 }
 .header {
-  background-image: url("../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg");
+  background-image: url("images/desktop/image-header.jpg");
   background-size: cover;
   background-position: center bottom;
   text-align: center;
@@ -130,10 +130,10 @@ Sunnyside Agency Landing Page
 }
 
 .section-box:nth-child(5) {
-  background-image: url("../sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg");
+  background-image: url("images/desktop/image-graphic-design.jpg");
 }
 .section-box:nth-child(6) {
-  background-image: url("../sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg");
+  background-image: url("images/desktop/image-photography.jpg");
 }
 
 .section-box-txt > * {

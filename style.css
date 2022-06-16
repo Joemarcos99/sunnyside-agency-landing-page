@@ -1,0 +1,371 @@
+/* 
+Author: Joe Marcotte
+Date: 6/15/2022
+Sunnyside Agency Landing Page
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Inter:wght@400;700&family=Libre+Baskerville&family=Red+Hat+Display:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;700&family=Libre+Baskerville&family=Red+Hat+Display:wght@500&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --Soft-red: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --Dark-blue: hsl(198, 62%, 26%);
+  --Dark-moderate-cyan: hsl(168, 34%, 41%);
+
+  --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --Dark-grayish-blue: hsl(232, 10%, 55%);
+  --Grayish-blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+
+  --font-size: 18px;
+  --barlow: "Barlow", sans-serif;
+  --fraunces: "Fraunces", sans-serif;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-image: url("../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  text-align: center;
+  color: var(--White);
+  height: 100vh;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(61, 190, 255);
+}
+
+.logo {
+  padding: 0.5rem 1rem;
+}
+.nav-btns {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-right: 1rem;
+}
+.nav-btn a {
+  text-decoration: none;
+  font-family: var(--barlow);
+  color: var(--White);
+  transition: 0.2s all ease-in-out;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-family: var(--barlow);
+  border: none;
+  transition: 0.2s all ease-in-out;
+}
+.btn:hover {
+  background-color: var(--Yellow);
+}
+.nav-btn a:hover,
+.social-container > *:hover,
+.footer-nav > *:hover {
+  color: var(--Yellow);
+  cursor: pointer;
+}
+.title {
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-top: 3rem;
+  font-size: 8rem;
+  padding-top: 6rem;
+  font-weight: 100;
+  text-shadow: 2px 2px 4px #000000;
+}
+.icon-arrow {
+  margin-top: 5rem;
+  height: 13em;
+}
+/*Main section*/
+.main-section {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.section-box {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-box:nth-child(5),
+.section-box:last-child {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.section-box:nth-child(5) {
+  background-image: url("../sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg");
+}
+.section-box:nth-child(6) {
+  background-image: url("../sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg");
+}
+
+.section-box-txt > * {
+  padding: 1rem 6rem;
+}
+.section-box-txt {
+  height: 35%;
+}
+
+.box-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.description,
+.client-description,
+.job-title {
+  font-weight: 350;
+  color: var(--Dark-grayish-blue);
+}
+h4 {
+  transition: 0.2s all ease-in;
+}
+.learn-more:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--Soft-red);
+}
+
+/*client testimonials*/
+
+.test-container > * {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.test-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--Very-dark-desaturated-blue);
+  margin-top: 13rem;
+}
+
+.client-container {
+  display: flex;
+  margin: 3rem 0;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.client {
+  width: 25%;
+}
+.client > * {
+  padding: 0.5rem;
+}
+.profile-img {
+  border-radius: 50%;
+  height: 5rem;
+}
+
+/*images*/
+
+.images-container {
+  display: flex;
+  max-width: 100%;
+  margin-top: 8rem;
+}
+
+.images-container img {
+  width: 25%;
+}
+
+/*footer*/
+
+.footer {
+  background-color: var(--Dark-moderate-cyan);
+  text-align: center;
+}
+
+.footer .logo {
+  color: var(--Dark-desaturated-cyan);
+  opacity: 0.8;
+  margin-top: 2rem;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+}
+.footer-nav > * {
+  padding: 0.5rem 2rem;
+  font-weight: 400;
+}
+
+.social-container {
+  padding: 3rem 0;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-container img:hover {
+  opacity: 0.6;
+}
+
+.icon {
+  gap: 1rem;
+}
+
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+
+/* Styling for mobile displays*/
+
+@media (max-width: 800px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-btn.active {
+    display: flex;
+  }
+  div.nav-btns.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    justify-content: space-around;
+    width: 3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    background: none;
+    border: none;
+  }
+
+  .bar {
+    height: 4px;
+    width: 100%;
+    background-color: var(--White);
+    border-radius: 0.2rem;
+  }
+  .nav-btns > *,
+  .contact-btn {
+    font-size: 1.6rem;
+  }
+  .nav-btns a,
+  button {
+    color: var(--Dark-grayish-blue) !important;
+    font-weight: 600;
+  }
+  .nav-btns.active {
+    position: absolute;
+    right: 5%;
+    height: 40vh;
+    top: 6rem;
+    background-color: var(--White);
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    justify-content: space-evenly;
+    box-shadow: 4px 3px 8px 1px #969696;
+    padding: 1rem 0;
+  }
+
+  .nav-btns::before {
+    content: "";
+    border-width: 2rem 3rem 2rem 0;
+    border-color: transparent white transparent transparent;
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    border-style: solid;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .main-nav {
+    position: relative;
+  }
+  .contact-btn {
+    background-color: var(--Yellow);
+  }
+
+  .nav-btn:hover,
+  .contact-btn:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    color: black;
+  }
+
+  .main-section {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: repeat(6, 1fr) !important;
+  }
+  .section-box:nth-child(1) {
+    grid-row: 2;
+  }
+  .section-box-txt > * {
+    padding: 1rem 0.5rem !important;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  .client-container {
+    flex-direction: column;
+  }
+  .client {
+    width: 100% !important;
+    padding: 1rem 0.5rem;
+    font-size: 1.3rem;
+  }
+  .images-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .images-container img {
+    width: 100% !important;
+  }
+}
